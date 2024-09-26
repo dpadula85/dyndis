@@ -1,0 +1,27 @@
+;
+; Daniele Padula, daniele.padula@unisi.it
+; C8-BTBT topology.
+; OPLS LJ terms.
+;
+[ defaults ]
+; nbfunc   comb-rule   gen-pairs  fudgeLJ  fudgeQQ
+1          3           no          1.0       0.0 
+
+[ atomtypes ]
+; name       mass       charge  ptype  sigma      espilon
+Cp           12.0110    0.000   A      0.3550     0.292880
+Hp            1.0079    0.000   A      0.2420     0.125520
+STh          32.0600    0.000   A      0.3550     1.046000
+CTh          12.0110    0.000   A      0.3550     0.292880
+c            12.0110    0.000   A      0.3500     0.276144
+h             1.0079    0.000   A      0.2500     0.125520
+
+#include "./C8-BTBT.itp"
+
+[ system ]
+; Name
+C8-BTBT
+ 
+[ molecules ]
+; Compound        #mols
+DBT                   1
